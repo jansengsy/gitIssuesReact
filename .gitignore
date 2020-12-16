@@ -3,3 +3,4 @@
 gitinfo
 .env
 /dist/
+/coverage/

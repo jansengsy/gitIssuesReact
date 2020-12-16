@@ -6,11 +6,27 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-cli serve --open 'Google Chrome' --mode development",
-    "test": "jest"
+    "test": "jest --coverage",
+    "test watch": "npm run test -- --watch"
   },
   "jest": {
     "moduleNameMapper": {
       "^.+\\.(css|less|scss)$": "babel-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
     }
   },
   "author": "",
