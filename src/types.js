@@ -1,0 +1,10 @@
+export const GET_ISSUES = 'GET_ISSUES';
+export const GET_ISSUE = 'GET_ISSUE';
+export const DELETE_ISSUE = 'DELETE_ISSUE';
+export const CREATE_ISSUE = 'CREATE_ISSUE';
+export const SET_CURRENT_ISSUE = 'SET_CURRENT_ISSUE';
+export const CLEAR_CURRENT_ISSUE = 'CLEAR_CURRENT_ISSUE';
+export const FILTER_ISSUES = 'FILTER_ISSUES';
+export const CLEAR_FILTERS = 'CLEAR_FILTERS';
+export const SET_ERROR = 'SET_ERROR';
+export const CLEAR_ERROR = 'CLEAR_ERROR';

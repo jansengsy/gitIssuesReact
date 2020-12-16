@@ -1,0 +1,10 @@
+$text: red;
+
+.App {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+    .content {
+        color: $text;
+    }
+}
