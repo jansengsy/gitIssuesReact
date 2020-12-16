@@ -14,7 +14,7 @@ const IssueContainer = () => {
   return (
     <div>
       {issues.map((issue) => (
-        <Issue issue={issue}></Issue>
+        <Issue key={issue.number} issue={issue}></Issue>
       ))}
     </div>
   );
