@@ -8,6 +8,11 @@
     "start": "webpack-cli serve --open 'Google Chrome' --mode development",
     "test": "jest"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "babel-jest"
+    }
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

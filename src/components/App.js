@@ -3,7 +3,7 @@ import './App.scss';
 import IssueState from '../context/IssueState';
 import IssuesContainer from '../components/issues/issueContainer/IssueContainer';
 
-export const App = () => {
+const App = () => {
   return (
     <IssueState>
       <div className='App'>
