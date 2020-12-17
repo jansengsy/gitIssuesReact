@@ -31,7 +31,6 @@ const IssueState = (props) => {
 
     const res = await axios.get(issuesUrl);
 
-    console.log(JSON.stringify(res));
     dispatch({
       type: GET_ISSUES,
       payload: res.data,
