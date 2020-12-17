@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react';
-import IssueContext from '../../../context/issueContext';
-import Issue from '../issue/Issue';
+import IssueContext from '../../../context/issueContext/issueContext';
+import IssueNav from '../issueNav/IssueNav';
+import NavState from '../../../context/navContext/navState';
 
 const IssueContainer = () => {
   const issueContext = useContext(IssueContext);
@@ -13,9 +14,9 @@ const IssueContainer = () => {
 
   return (
     <div>
-      {issues.map((issue) => (
-        <Issue key={issue.number} issue={issue}></Issue>
-      ))}
+      <NavState>
+        <IssueNav />
+      </NavState>
     </div>
   );
 };

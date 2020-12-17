@@ -1,5 +1,4 @@
-import React, { useReducer } from 'react';
-import { GET_ISSUES } from '../types';
+import { GET_ISSUES } from '../../types';
 import issuesReducer from './issueReducer';
 
 const initialState = {

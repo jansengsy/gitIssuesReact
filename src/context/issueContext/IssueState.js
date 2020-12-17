@@ -12,7 +12,7 @@ import {
   CLEAR_FILTERS,
   SET_ERROR,
   CLEAR_ERROR,
-} from '../types';
+} from '../../types';
 
 const IssueState = (props) => {
   const initialState = {

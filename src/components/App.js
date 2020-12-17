@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import IssueState from '../context/IssueState';
+import IssueState from '../context/issueContext/IssueState';
 import IssuesContainer from '../components/issues/issueContainer/IssueContainer';
 
 const App = () => {

@@ -1,11 +1,8 @@
 import React from 'react';
-import Adapter from 'enzyme-adapter-react-16';
-import { mount, shallow, configure } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 import IssueContainer from './IssueContainer';
-import IssuesContext from '../../../context/issueContext';
-
-configure({ adapter: new Adapter() });
+import IssuesContext from '../../../context/issueContext/issueContext';
 
 const issues = [{ number: 1 }, { number: 2 }];
 
