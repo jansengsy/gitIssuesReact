@@ -11,7 +11,6 @@ const NavState = (props) => {
   const [state, dispatch] = useReducer(navReducer, initalState);
 
   const navClicked = () => {
-    console.log('Clicked: State');
     dispatch({ type: DROPDOWN_CLICKED, payload: true });
   };
 
