@@ -1,22 +1,24 @@
 import React, { useEffect, useContext } from 'react';
 import IssueContext from '../../../context/issueContext/issueContext';
-import IssueNav from '../issueNav/IssueNav';
+import IssueNav from '../../navigation/issueNav/IssueNav';
 import NavState from '../../../context/navContext/navState';
+import IssueTable from '../issueTable/IssueTable';
 
 const IssueContainer = () => {
   const issueContext = useContext(IssueContext);
 
-  const { issues, getIssues } = issueContext;
+  const { getIssues } = issueContext;
 
   useEffect(() => {
     getIssues();
   }, []);
 
   return (
-    <div>
+    <div className='issues-container'>
       <NavState>
         <IssueNav />
       </NavState>
+      <IssueTable />
     </div>
   );
 };

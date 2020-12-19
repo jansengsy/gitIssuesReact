@@ -7,7 +7,7 @@ const App = () => {
   return (
     <IssueState>
       <div className='App'>
-        <h1>Welcome to my home made issues page:</h1>
+        <h1 className='title'>Welcome to my home made issues page:</h1>
         <IssuesContainer />
       </div>
     </IssueState>

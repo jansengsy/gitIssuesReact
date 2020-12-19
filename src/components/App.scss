@@ -3,8 +3,26 @@ $text: red;
 .App {
     color: black;
     font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 8% 84% 8%;
+    grid-template-rows: 100px 90% 10%;
 
-    .content {
-        color: $text;
+    .title {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      justify-self: center;
+    }
+
+    .issues-container {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      justify-self: stretch;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50px auto;
     }
 }

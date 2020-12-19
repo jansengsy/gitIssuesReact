@@ -1,3 +1,13 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  justify-self: end;
+}
+
 .dropdown-button {
   background-color: #3498DB;
   color: white;
@@ -9,10 +19,6 @@
   background-color: #286f9e;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
 .dropdown-content {
   position: absolute;
